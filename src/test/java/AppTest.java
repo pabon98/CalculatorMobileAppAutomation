@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -50,7 +49,7 @@ public class AppTest {
         el7.click();
     }
     @Test
-    public void divisiOfNumber(){
+    public void divisionOfNumber(){
         WebElement el8 = driver.findElement(AppiumBy.accessibilityId("5"));
         el8.click();
         WebElement el9 = driver.findElement(AppiumBy.accessibilityId("0"));
@@ -63,6 +62,42 @@ public class AppTest {
         el12.click();
         WebElement el13 = driver.findElement(AppiumBy.accessibilityId("clear"));
         el13.click();
+    }
+    @Test
+    public void randomOperation(){
+        WebElement el8 = driver.findElement(AppiumBy.accessibilityId("5"));
+        el8.click();
+        WebElement el9 = driver.findElement(AppiumBy.accessibilityId("0"));
+        el9.click();
+        WebElement el10 = driver.findElement(AppiumBy.accessibilityId("multiply"));
+        el10.click();
+        WebElement el11 = driver.findElement(AppiumBy.accessibilityId("5"));
+        el11.click();
+        WebElement el12 = driver.findElement(AppiumBy.accessibilityId("0"));
+        el12.click();
+        WebElement el13 = driver.findElement(AppiumBy.accessibilityId("equals"));
+        el13.click();
+        WebElement el14 = driver.findElement(AppiumBy.accessibilityId("minus"));
+        el14.click();
+        WebElement el15 = driver.findElement(AppiumBy.accessibilityId("1"));
+        el15.click();
+        WebElement el16 = driver.findElement(AppiumBy.accessibilityId("5"));
+        el16.click();
+        WebElement el17 = driver.findElement(AppiumBy.accessibilityId("0"));
+        el17.click();
+        WebElement el18 = driver.findElement(AppiumBy.accessibilityId("equals"));
+        el18.click();
+        WebElement el19 = driver.findElement(AppiumBy.accessibilityId("divide"));
+        el19.click();
+        WebElement el20 = driver.findElement(AppiumBy.accessibilityId("5"));
+        el20.click();
+        WebElement el21 = driver.findElement(AppiumBy.accessibilityId("0"));
+        el21.click();
+        WebElement el22 = driver.findElement(AppiumBy.accessibilityId("equals"));
+        el22.click();
+        WebElement el23 = driver.findElement(AppiumBy.accessibilityId("clear"));
+        el23.click();
+
     }
 
     @AfterMethod
